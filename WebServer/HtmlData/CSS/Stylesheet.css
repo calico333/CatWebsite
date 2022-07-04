@@ -1,0 +1,186 @@
+﻿body {
+    font-family: open sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    color: black;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col {
+    color: black;
+    background-color: white;   
+    fill: white;
+    height: 100vh;
+    padding: 5px;
+    display: table-column;
+    float: left;
+}
+
+.colContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 4096px) {
+    .col {
+        width: 15%
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .col {
+        width: 25%
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .col {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .col {
+        width: 100%
+    }
+}
+
+#slideshow {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -moz-animation: slides 30s linear infinite;
+    -webkit-animation: slides 30s linear infinite;
+    -o-animation: slides 30s linear infinite;
+    animation: slides 30s linear infinite;
+}
+
+@-webkit-keyframes slides {
+    from {
+        background: url("../Images/background1.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    25% {
+        background: url("../Images/background2.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    50% {
+        background: url("../Images/background3.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    75% {
+        background: url("../Images/background4.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    to {
+        background: url("../Images/background5.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+}
+
+@-moz-keyframes slides {
+    from {
+        background: url("../Images/background1.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    25% {
+        background: url("../Images/background2.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    50% {
+        background: url("../Images/background3.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    75% {
+        background: url("../Images/background4.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    to {
+        background: url("../Images/background5.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+}
+
+@-o-keyframes slides {
+    from {
+        background: url("../Images/background1.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    25% {
+        background: url("../Images/background2.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    50% {
+        background: url("../Images/background3.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    75% {
+        background: url("../Images/background4.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    to {
+        background: url("../Images/background5.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+}
+
+@keyframes slides {
+    from {
+        background: url("../Images/background1.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    25% {
+        background: url("../Images/background2.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    50% {
+        background: url("../Images/background3.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    75% {
+        background: url("../Images/background4.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+
+    to {
+        background: url("../Images/background5.jpg");
+        background-size: auto;
+        background-position: center center;
+    }
+}
